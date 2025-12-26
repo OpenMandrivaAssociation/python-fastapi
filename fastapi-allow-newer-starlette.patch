@@ -1,12 +1,12 @@
-diff -up python-fastapi-0.121.2/pyproject.toml.omv~ python-fastapi-0.121.2/pyproject.toml
---- python-fastapi-0.121.2/pyproject.toml.omv~	2025-11-18 23:16:25.028671891 +0100
-+++ python-fastapi-0.121.2/pyproject.toml	2025-11-18 23:16:33.444553036 +0100
-@@ -49,7 +49,7 @@ classifiers = [
+diff -up python-fastapi-0.127.1/pyproject.toml.1~ python-fastapi-0.127.1/pyproject.toml
+--- python-fastapi-0.127.1/pyproject.toml.1~	2025-12-26 14:04:33.239044400 +0100
++++ python-fastapi-0.127.1/pyproject.toml	2025-12-26 16:58:20.645500131 +0100
+@@ -47,7 +47,7 @@ classifiers = [
      "Topic :: Internet :: WWW/HTTP",
  ]
  dependencies = [
--    "starlette>=0.40.0,<0.50.0",
+-    "starlette>=0.40.0,<0.51.0",
 +    "starlette>=0.40.0,<0.60.0",
-     "pydantic>=1.7.4,!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0",
+     "pydantic>=2.7.0",
      "typing-extensions>=4.8.0",
      "annotated-doc>=0.0.2",
