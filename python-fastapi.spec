@@ -1,25 +1,26 @@
+%define module fastapi
+
 Name:		python-fastapi
-Version:	0.127.1
+Version:	0.135.1
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/source/f/fastapi/fastapi-%{version}.tar.gz
 Summary:	FastAPI framework, high performance, easy to learn, fast to code, ready for production
-URL:		https://pypi.org/project/fastapi/
-License:	None
+License:	MIT
 Group:		Development/Python
-BuildRequires:	python
-BuildRequires:	python%{pyver}dist(pdm-backend)
+URL:		https://pypi.org/project/fastapi/
+Source0:	https://files.pythonhosted.org/packages/source/f/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
 BuildSystem:	python
 BuildArch:	noarch
-
-%patchlist
-# The only difference between starlette 0.49.3 and 0.50.0 is that the latter
-# removes support for Python 3.9. No incompatibility here, we can allow it
-fastapi-allow-newer-starlette.patch
+BuildRequires:	python
+BuildRequires:	python%{pyver}dist(pdm-backend)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
-FastAPI framework, high performance, easy to learn, fast to code, ready for production
+FastAPI framework, high performance, easy to learn,
+fast to code, ready for production.
 
 %files
-%{_bindir}/fastapi
-%{py_sitedir}/fastapi
-%{py_sitedir}/fastapi-*.*-info
+%{_bindir}/%{module}
+%{py_sitedir}/%{module}
+%{py_sitedir}/%{module}-%{version}.dist-info
