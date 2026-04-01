@@ -1,7 +1,7 @@
 %define module fastapi
 
 Name:		python-fastapi
-Version:	0.135.2
+Version:	0.135.3
 Release:	1
 Summary:	FastAPI framework, high performance, easy to learn, fast to code, ready for production
 License:	MIT
