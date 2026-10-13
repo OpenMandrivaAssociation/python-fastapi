@@ -2,7 +2,7 @@
 
 Name:		python-fastapi
 Version:	0.141.1
-Release:	1
+Release:	2
 Summary:	FastAPI framework, high performance, easy to learn, fast to code, ready for production
 License:	MIT
 Group:		Development/Python
